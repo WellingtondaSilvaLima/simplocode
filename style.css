@@ -103,9 +103,17 @@ hr {
 }
 
 .conteudo-busca-code {
+  display: flex;
+  justify-content: center;
   position: fixed;
   bottom: 0;
   right: 0;
   width: calc(100% - 256px);
   height: calc(100% - 80px);
+}
+
+section button {
+display: flex;
+align-items: center;
+justify-content: center;
 }
