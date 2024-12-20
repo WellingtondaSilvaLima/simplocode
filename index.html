@@ -182,24 +182,36 @@
     </div>
   </main>
 
-  <section class="conteudo-busca-code">
-    <button type="button" id="open-modal-btn" class="btn btn-primary btn-sm open-modal-btn" onclick="openModal()">Buscar Código</button> 
-  
+  <section id="caixa" class="conteudo-busca-code">
+    <div>
+      <button type="button" id="open-modal-btn" class="btn btn-primary btn-sm open-modal-btn"
+        onclick="openModal()">Buscar
+        Código</button>
+    </div>
+
     <div id="modal" class="modal">
       <div class="modal-content">
         <span class="close-btn">&times;</span>
         <h3>Buscar Código</h3>
         <input type="text" id="codigo" placeholder="Informe o código">
-        <button id="confirmar" class="button confirmar">Confirmar</button>
+        <button id="confirmar" class="btn btn-primary btn-sm botao-confirmar">Confirmar</button>
       </div>
     </div>
-  
-    <script src="script.js"></script>
-  </section>
 
+  </section>
+  <div id="resultado">
+    <p id="localizacao"><strong>Localização:</strong></p>
+    <p id="causa"><strong>Causa:</strong></p>
+    <p id="capitulo"><strong>Capítulo/Origem:</strong></p>
+  </div>
+
+
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
 </body>
 
 </html>
