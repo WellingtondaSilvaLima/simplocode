@@ -180,8 +180,7 @@ section button {
 }
 
 .modal-content {
-  display: flex !important;
-  flex-direction: column !important;
+  background-color: #fff;
 }
 
 #resultado {

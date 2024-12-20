@@ -8,6 +8,7 @@ const closeBtn = document.querySelector('.close-btn');
 // Função para abrir o modal
 const openModal = () => {
   modal.style.display = 'block';
+  document.getElementById('resultado').style.display = 'none';
 };
 
 // Função para fechar o modal
@@ -54,11 +55,13 @@ function buscaNoExcel(codigoBusca) {
           if (resultado) {
               document.getElementById('resultado').style.display = 'inline-block'
               // Exibir as informações na tela principal
-              document.getElementById('localizacao').innerHTML = '<strong>Localização da Avaria:</strong> ' + resultado.Localizacao;
-              document.getElementById('causa').innerHTML = '<strong>Causa da Avaria:</strong> ' + resultado.Causa;
-              document.getElementById('capitulo').innerHTML = '<strong>Capítulo/Origem:</strong> ' + resultado.Capitulo;
+              document.getElementById('localizacao').innerText = resultado.Localizacao;
+              document.getElementById('causa').innerText = resultado.Causa;
+              document.getElementById('capitulo').innerText = resultado.Capitulo;
 
-              closeModal()
+              closeModal();
+
+              document.getElementById('codigo').value = '';
           } else {
               alert("Código não encontrado.");
           }
