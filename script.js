@@ -54,9 +54,9 @@ function buscaNoExcel(codigoBusca) {
           if (resultado) {
               document.getElementById('resultado').style.display = 'inline-block'
               // Exibir as informações na tela principal
-              document.getElementById('localizacao').innerText = 'Localização da Avaria: ' + resultado.Localizacao;
-              document.getElementById('causa').innerText = 'Causa da Avaria: ' + resultado.Causa;
-              document.getElementById('capitulo').innerText = 'Capítulo/Origem: ' + resultado.Capitulo;
+              document.getElementById('localizacao').innerHTML = '<strong>Localização da Avaria:</strong> ' + resultado.Localizacao;
+              document.getElementById('causa').innerHTML = '<strong>Causa da Avaria:</strong> ' + resultado.Causa;
+              document.getElementById('capitulo').innerHTML = '<strong>Capítulo/Origem:</strong> ' + resultado.Capitulo;
 
               closeModal()
           } else {

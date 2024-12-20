@@ -185,6 +185,7 @@ section button {
 }
 
 #resultado {
+  max-width: 400px;
   position: fixed;
   top: 15%;
   right: 39%;
