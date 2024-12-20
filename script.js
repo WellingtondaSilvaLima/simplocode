@@ -51,8 +51,6 @@ function buscaNoExcel(codigoBusca) {
           // Buscar pelo código no Excel
           let resultado = jsonData.find(row => row.Codigo === codigoBusca);
 
-          console.log(resultado.Localizacao)
-
           if (resultado) {
               document.getElementById('resultado').style.display = 'inline-block'
               // Exibir as informações na tela principal
