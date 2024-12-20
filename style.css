@@ -71,11 +71,13 @@ hr {
   margin-bottom: 9px;
 }
 
-.link-code:visited {
+.link-code:visited,
+.link-code:link {
   color: beige;
 }
 
-.link-code:hover {
+.link-code:hover,
+.link-code:active {
   background-color: rgb(98, 98, 98);
   color: beige;
 }
@@ -98,4 +100,12 @@ hr {
   height: 22px !important;
   margin-left: 10px;
   text-transform: uppercase;
+}
+
+.conteudo-busca-code {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 256px);
+  height: calc(100% - 80px);
 }
